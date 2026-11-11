@@ -2,7 +2,7 @@
 
 ## The Problem
 
-When you use GoodNotes' Auto Backup feature with Google Drive, GoodNotes uploads individual `.goodnotes` files arranged in a folder hierarchy. If you try to download a folder to a PC via Google Drive web Google Drive automatically turns `.goodnotes` files to `.goodnotes.zip` files (e.g., `Notebook.goodnotes.zip`) during its zipping process. There is a missing `.goodnotesmeta` file that is not created by GoodNotes' Auto Backup feature, which shows the structure of all the files.
+When you use GoodNotes' Auto Backup feature with Google Drive, GoodNotes uploads individual `.goodnotes` files arranged in a folder hierarchy. If you try to download a folder to a PC via Google Drive web Google Drive automatically turns `.goodnotes` files to `.goodnotes.zip` files (e.g., `Notebook.goodnotes` -> `Notebook.goodnotes.zip`) during Google Drive's zipping process. There is a missing `.goodnotesmeta` file that is not created by GoodNotes' Auto Backup feature, which shows the structure of all the files.
 
 Without `.goodnotesmeta`, GoodNotes will refuse to bulk-import the folder structure. Furthermore, GoodNotes cannot read the altered `.goodnotes.zip` files. Attempting to import the raw Google Drive download will fail.
 
