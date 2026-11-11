@@ -39,6 +39,16 @@ Before zipping your backup, you must remove any files that do not belong in a na
 * `build_goodnotes.py` (the script itself)
 * Any `.pdf` files or other files like images (only `.goodnotes` files and folders should remain, alongside the newly created `.goodnotesmeta` file).
 
+Optional: Aggressive Cleanup Script
+If your Google Drive backup contains extra clutter (like exported .pdf copies or images) and you only want to keep the raw GoodNotes notebooks, you can use the cleanup_backup.py script.
+
+WARNING: This is destructive. Run this carefully.
+
+```bash
+python cleanup_backup.py
+```
+It will recursively delete every single file in the folder (including itself) that isn't a .goodnotes or .goodnotesmeta file, leaving you with a perfectly clean notebook directory ready to be zipped.
+
 **4. Create the final GoodNotes Backup**
 Select **all** the items inside your root folder (your subfolders, standalone `.goodnotes` files, and the `.goodnotesmeta` file). 
 * Right-click the selected items and compress/zip them (e.g., *Compress to ZIP file* on Windows, or *Compress* on macOS).
