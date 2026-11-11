@@ -6,6 +6,8 @@ When you use GoodNotes' Auto Backup feature with Google Drive, GoodNotes uploads
 
 Without `.goodnotesmeta`, GoodNotes will refuse to bulk-import the folder structure. Furthermore, GoodNotes cannot read the altered `.goodnotes.zip` files. Attempting to import the raw Google Drive download will fail.
 
+The Google Drive import feature built in for GoodNotes Pro imports singular files and cannot do entire folders or allow you to select multiple files at once...
+
 ## The Solution
 This Python script repairs a downloaded Google Drive Auto Backup so it can be restored exactly like a native GoodNotes Manual Backup. 
 
