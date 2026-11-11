@@ -35,7 +35,7 @@ python3 build_goodnotes.py
 **3. Cleanup (Important)**
 Before zipping your backup, you must remove any files that do not belong in a native GoodNotes backup. Delete the following from your folder:
 * `build_goodnotes.py` (the script itself)
-* Any `.pdf` files or other exported formats (only `.goodnotes` files and folders should remain, alongside the newly created `.goodnotesmeta` file).
+* Any `.pdf` files or other files like images (only `.goodnotes` files and folders should remain, alongside the newly created `.goodnotesmeta` file).
 
 **4. Create the final GoodNotes Backup**
 Select **all** the items inside your root folder (your subfolders, standalone `.goodnotes` files, and the `.goodnotesmeta` file). 
